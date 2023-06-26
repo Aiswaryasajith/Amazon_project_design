@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <style>
+        *{
+            margin: 0px;
+        }
+        .nav-1{
+            width: 100%;
+            height: 80px;
+            background-color: rgb(23, 23, 23);
+            align-items: center;
+            display: flex;
+        }
+        .nav-1 h2{
+            color: white;
+            align-items: center;
+            margin-left: 50px;
+            font-size: 25px;
+            font-family: 'Lemon', cursive;
+            cursor: pointer;
+        }
+        .nav-1 h5{
+            color: white;
+            font-size: 15px;
+            align-items: center;
+            position: relative;
+            top: 2px;
+            left: 34px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .nav-1 h6{
+            color: white;
+            font-size: 13px;
+            align-items: center;
+            position: absolute;
+            top: 17px;
+            left: 230px;
+            cursor: pointer;
+            /* border: 1px solid rgb(30, 29, 29);
+            padding: 4px;
+            border-radius: 3px; */
+        }
+        .nav-1 img{
+            height: 80px;
+            width: 130px;
+            position: relative;
+            left: 30px;
+            cursor: pointer;
+            border: 1px solid rgb(30, 29, 29);
+            padding: 4px;
+            border-radius: 3px;
+        }
+       .nav-1 i{
+        color: white;
+        font-size: 18px;
+        /* margin-left: 45px; */
+        position: relative;
+        left: 60px;
+        top: 7px;
+        border: 1px solid rgb(30, 29, 29);
+        padding: 4px;
+        border-radius: 3px;
+
+       }
+
+       .nav-1 h4{
+        color: white;
+        /* margin-left: 10px;
+        margin-top: 5px; */
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        left: 58px;
+        top: 10px;
+        border: 1px solid rgb(30, 29, 29);
+        /* padding: 7px; */
+        padding-bottom: 5px;
+        padding-top: 25px;
+        padding-left: 3px;
+        padding-right: 5px;
+        border-radius: 3px;
+       }
+
+       .dropbtn-1 {
+  background-color: rgb(220, 221, 221);
+  color: rgb(55, 54, 54);
+  /* padding: 15px 15px; */
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 25px;
+  font-size: 12px;
+  font-weight: bolder;
+  border: 1px solid rgb(251, 253, 253);
+  /* border-radius: 3px; */
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  /* margin-bottom: 50px; */
+  /* position: relative; 
+  left: 100px; */
+  /* bottom: 5px; */
+ 
+}
+
+.dropdown-1 {
+  /* position: relative; */
+  /* display: inline-block; */
+  /* background-color: #f1f1f1; */
+  width: 50px;
+  height: 40px;
+  
+   position: absolute; 
+   left: 400px; 
+  /* bottom: 10px; */
+}
+.dropdown-1 i {
+ color: rgb(124, 123, 123);
+ font-size: 10px;
+ position: absolute;
+ left: 35px;
+ top: 13px;
+ /* margin-right: 10px; */
+
+}
+
+.dropdown-content-1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-1 a {
+  color: black;
+  padding: 2px 10px;
+  /* text-decoration: none; */
+  display: block;
+}
+
+.dropdown-content-1 a:hover {background-color: #ddd;}
+
+.dropdown-1:hover .dropdown-content-1 {display: block;}
+
+.dropdown-1:hover .dropbtn-1 {background-color: rgb(161, 162, 162);}
+
+    .search-container input{
+        position: absolute;
+        left: 457px;
+        top: 19px;
+        width: 700px;
+        height: 44px;
+    }
+    .search-container button{
+        position: absolute;
+        left: 1155px;
+        top: 19px;
+        width: 50px;
+        height: 46px;
+        background-color: rgb(251, 185, 62);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+    }
+    .i-1:hover{
+        color: rgb(101, 100, 100);
+    }
+    
+    .search-container i{
+        position: absolute;
+        left: 1155px;
+        top: 25px;
+        width: 50px;
+        height: 47px;
+        color: black;
+        cursor: pointer;
+    }
+
+
+       .nav-2{
+         width: 100%;
+         height: 40px;
+         background-color: rgb(18, 14, 29);
+         opacity: 0.7;
+         align-items: center;
+         display: flex;
+         justify-content: space-evenly;
+       }
+       .nav2-icon i{
+        color: white;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: 25px;
+       }
+       .nav-2 h3{
+        color: white;
+        font-size: 15px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+        border: 1px solid rgb(30, 29, 29);
+        padding: 4px;
+        border-radius: 3px;
+       }
+       .nav2-icon h2{
+        color: white;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+        padding: 5px;
+        border: 1px solid rgb(30, 29, 29);
+        border-radius: 3px;
+        
+       }
+       .nav2-icon{
+        width: 60px;
+        display: flex;
+        padding: 5px;
+        border: 2px solid rgb(30, 29, 29);
+        border-radius: 3px;
+       }
+
+       .div-slide{
+        width: 100%;
+        height: 450px;
+        background-color: lightcyan;
+       }
+
+       .div-main{
+        width: 100%;
+        height: 700px;
+        position: relative;
+        bottom: 150px;
+        /* background-color:aquamarine; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       }
+       .div1-first{
+        width: 350px;
+        height: 450px;
+        background-color: white;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+       }
+       .div2-first{
+        width: 350px;
+        height: 450px;
+        background-color: white;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+       }
+       .div3-first{
+        width: 350px;
+        height: 450px;
+        background-color: white;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+       }
+       .div4-first{
+        width: 310px;
+        height: 450px;
+        /* background-color: bisque; */
+        /* box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(222, 222, 222); */
+       }
+
+       .img1{
+        width: 150px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 20px;
+        cursor: pointer;
+       }
+       .img2{
+        width: 150px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 30px;
+        cursor: pointer;
+
+       }
+       .img3{
+        width: 150px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 20px;
+        cursor: pointer;
+       }
+       .img4{
+        width: 150px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 30px;
+        cursor: pointer;
+       }
+       .div1-img1 img{
+        position: relative;
+        top: 20px;
+       }
+       .div1-h51{
+        position: relative;
+        top: 15px;
+        left: 25px;
+       }
+       .div1-h52{
+        position: relative;
+        /* top: 1px; */
+        bottom: 10px;
+        left: 190px;
+       }
+       .div1-h53{
+        position: relative;
+        top: 25px;
+        left: 25px;
+       }
+       .div1-h54{
+        position: relative;
+        top: 1px;
+        left: 190px;
+       }
+
+
+       .div1-first h2{
+        position: relative;
+        top: 10px;
+        left: 15px;
+        font-size: 20px;
+        margin-right: 15px;
+       }
+       .div2-first h2{
+        position: relative;
+        top: 10px;
+        left: 15px;
+        font-size: 20px;
+        margin-right: 10px;
+       }
+       .div3-first h2{
+        position: relative;
+        top: 10px;
+        left: 15px;
+        font-size: 20px;
+        /* margin-right: 1px; */
+       }
+       
+       .div1-img2 img{
+        position: relative;
+        top: 35px;
+       }
+       .img5{
+        width: 150px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 20px;
+        cursor: pointer;
+       }
+       .img6{
+        width: 150px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 30px;
+        cursor: pointer;
+
+       }
+       .img7{
+        width: 150px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 20px;
+        cursor: pointer;
+       }
+       .img8{
+        width: 150px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 30px;
+        cursor: pointer;
+
+       }
+       .div2-img1 img{
+        position: relative;
+        top: 45px;
+       }
+       .div2-img2 img{
+        position: relative;
+        top: 55px;
+       }
+       .div2-h51{
+        position: relative;
+        top: 40px;
+        left: 19px;
+       }
+       .div2-h52{
+        position: relative;
+        top: 15px;
+        left: 190px;
+        
+       }
+       .div2-h52 span{
+        position: relative;
+        top: 20px;
+        right: 150px;
+        
+       }
+       .div2-h53{
+        position: relative;
+        top: 50px;
+        left: 20px;
+       }
+       .div2-h54{
+        position: relative;
+        top: 25px;
+        left: 185px;
+       }
+       .div2-h54 span{
+        position: relative;
+        top: 20px;
+        right: 155px;
+       }
+       .div3-img1 img{
+        width: 300px;
+        height: 250px;
+        position: relative;
+        top: 50px;
+        left: 25px;
+        cursor: pointer;
+       }
+        .div1-first a{
+     
+        position: relative;
+        top: 10px;
+        left: 25px; 
+        /* color: blue; */
+
+       }
+        .div2-first a{
+     
+        position: relative;
+        top: 40px;
+        left: 20px;
+        /* color: blue; */
+
+       }
+        .div3-first a{
+     
+        position: relative;
+        top: 80px;
+        left: 20px;
+        /* color: blue; */
+
+       }
+       
+       .div4-box1{
+        width: 350px;
+        height: 170px;
+        background-color: white;
+        position: relative;
+        right: 20px;
+        bottom: 20px;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+       }
+       .div4-box1 h2{
+        position: relative;
+        left: 20px;
+        top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 90px;
+       }
+       .div4-box1 button{
+        text-align: center;
+        border-radius: 10px;
+        display: block;
+        padding: 10px 100px;
+        border: none;
+        font-size: 13px;
+        font-weight:500;
+        background-color: rgb(255, 215, 73);
+        position: relative;
+        left: 25px;
+        top: 40px;
+        cursor: pointer;
+        
+       }
+       button:hover{
+        background-color: rgb(249, 179, 51);
+       }
+
+       .div4-box2{
+        width: 310px;
+        height: 260px;
+        background-color: white;
+        position: relative;
+        top: 1px;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+       }
+
+
+       .div-main2{
+        width: 100%;
+        height: 700px;
+        position: relative;
+        bottom: 378px;
+        /* background-color:aquamarine; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       }
+
+       .div24-first{
+        width: 310px;
+        height: 450px;
+        background-color: white;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+       }
+
+       .div24-first img{
+        position: relative;
+        top: 30px;
+       }
+
+       .img9{
+        width: 130px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 20px;
+        cursor: pointer;
+       }
+       .img10{
+        width: 130px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 30px;
+        cursor: pointer;
+
+       }
+       .img11{
+        width: 130px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 20px;
+        cursor: pointer;
+       }
+       .img12{
+        width: 130px;
+        height: 100px;
+        /* display: flex; */
+        position: relative;
+        left: 30px;
+        cursor: pointer;
+
+       }
+
+       .div24-first h2{
+        position: relative;
+        top: 15px;
+        left: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 10px;
+       }
+
+       .div24-h53{
+        position: relative;
+        top: 25px;
+        left: 25px;
+       }
+       .div24-h54{
+        position: relative;
+        top: 1px;
+        left: 165px;
+       }
+       .div24-first a{
+     
+        position: relative;
+        top: 20px;
+        left: 20px;
+        /* color: blue; */
+
+    }
+    .div4-img{
+        width: 310px;
+        height: 260px;
+        object-fit: fill;
+    }
+
+
+
+    .div-main3{
+        width: 97%;
+        height: 380px;
+        position: relative;
+        bottom: 610px;
+        left: 30px;
+        background-color: white;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+        /* display: flex;
+        flex-direction: row;
+        justify-content:space-around; */
+    }
+    .div3-image3{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        position: relative;
+        top: 10px;
+    }
+
+    .div-main3 h2{
+        position: relative;
+        left: 20px;
+        /* bottom: 10px; */
+        top: 5px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    
+    .div-main3 a{
+        position: relative; 
+        bottom: 355px;
+        left: 190px; 
+    }
+    
+
+    .div3-image3 img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+    .img1-div3{
+        width: 235px;
+        height: 330px;
+        /* background-color: antiquewhite; */
+        position: relative;
+        bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .img1-img{
+        width: 235px;
+        height: 235px; 
+        background-color: aliceblue;
+    }
+
+    .img1-div3 p{
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: 30px;
+    }
+
+
+     .div-main4{
+        width: 97%;
+        height: 250px;
+        position: relative;
+        bottom: 610px;
+        left: 30px;
+        background-color: white;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+    }
+
+    .div-main4 h2{
+        position: relative;
+        left: 20px;
+        top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .div-main4 img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 10px;
+    }
+
+     .div-main5{
+        width: 97%;
+        height: 250px;
+        position: relative;
+        bottom: 610px;
+        left: 30px;
+        background-color: white;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+    }
+
+    .div-main5 h2{
+        position: relative;
+        left: 20px;
+        top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .div-main5 img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 10px;
+    }
+
+    .div-main6{
+        width: 60%;
+        height: 270px;
+        position: relative;
+        bottom: 810px;
+        left: 320px;
+        /* background-color: white; */
+        /* box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209); */
+    }
+    .div-main6 img{
+        width: 900px;
+        height: 290px;
+        /* position: relative;
+        bottom: 760px;
+         left: 320px; */
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209); 
+    }
+
+
+    .div-main7{
+        width: 96%;
+        height: 300px;
+        position: relative;
+        bottom: 835px;
+        left: 30px;
+        background-color: white;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(209, 209, 209);
+    }
+
+    .div-second7{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+     .div-main7 h2{
+        position: relative;
+        left: 20px;
+        top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .div-main7 img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 20px;
+    }
+
+    .div-main7 iframe{
+        position: relative;
+        right: 10px;
+        bottom: 15px;
+
+    }
+
+    .sidebar{
+            width: 350px;
+            height: 1000%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            margin-left: -400px;
+            transition: all 0.5s;
+        }
+
+    .nav-7{
+        width: 100%;
+        height: 150px;
+        /* background-color: aliceblue; */
+        background-color: white;
+        position: relative;
+        bottom: 1000px;
+    }
+
+    
+        .nav-3{
+         width: 100%;
+         height: 40px;
+         background-color: rgb(18, 14, 29);
+         opacity: 0.5; 
+         align-items: center;
+         cursor: pointer;
+         position: relative;
+        bottom: 1000px;
+        }
+        .nav-3 h5{
+            color: white;
+            position: absolute;
+            left: 750px;
+            height: 18px;
+            font-weight: bolder;
+            cursor: pointer;
+
+        }
+        .nav-4{
+         width: 100%;
+         height: 500px;
+         background-color: rgb(29, 42, 60);
+         opacity: 0.7; 
+         position: relative;
+        bottom: 1000px;
+        }
+        .nav-4 table{
+            font-family: arial, sans-serif;
+            /* font-weight: bold;
+            color: white; */
+        }
+        .nav-4 th, td{
+            font-weight: bold;
+            color: white;
+            padding: 5px;
+            position: relative;
+            left: 150px;
+            top: 40px;
+            padding-left: 130px;
+        }
+        .nav-4 th{
+            font-size: 17px;
+        }
+        
+        .nav-4 a{
+            font-weight: bold;
+            color: white;
+            font-weight: lighter;
+        }
+
+        hr.solid {
+            position: relative;
+            top: 70px;
+          border-top: 1px solid rgb(102, 114, 132);
+        }
+        .nav4-div1{
+            /* background-color: beige; */
+            width: 100%;
+            height: 60px;
+            margin-top: 80px;
+        }
+        .nav4-div1 img{
+            width: 100px;
+            height: 60px;
+            position: absolute;
+            left: 600px;
+            
+        }
+
+.dropbtn {
+  background-color: rgb(29, 42, 60);
+  color: rgb(222, 221, 221);
+  padding: 7px 30px;
+  font-size: 13px;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-top: 15px;
+ 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: absolute; 
+  left: 800px;
+  /* bottom: 10px; */
+}
+.dropdown i {
+ color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 2px 10px;
+  /* text-decoration: none; */
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(55, 77, 105);}
+
+
+
+.nav5-div2{
+    width: 900px;
+    height: 30px;
+    /* background-color:bisque; */
+    position: relative;
+    top: 63px;
+    left: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.nav5-div3{
+    width: 250px;
+    height: 30px;
+    /* background-color:blanchedalmond; */
+    position: relative;
+    top: 63px;
+    left: 650px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.nav-6{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(29, 42, 60);
+    opacity: 1; 
+}
+.nav-7 h5{
+    position:absolute;
+    left: 650px;
+    top: 20px;
+}
+.nav-7 h6{
+    position:absolute;
+    left: 690px;
+    top: 94px;
+}
+.nav-7 a{
+    position:absolute;
+    left: 780px;
+    top: 103px;
+    font-size: 12px;
+}
+.btn-1:hover{
+    color: rgb(49, 48, 47);
+}
+
+.nav-7 button{
+        text-align: center;
+        border-radius: 10px;
+        display: block;
+        padding: 10px 120px;
+        border: 1.5px solid orange;
+        font-size: 13px;
+        font-weight:500;
+        background-color: rgb(255, 215, 73);
+        position: absolute;
+        left: 625px;
+        top: 60px;
+        cursor: pointer;
+        /* border-color: orange; */
+        
+       }
+
+    </style> -->
+
+    <link rel="stylesheet" href="amazon.css">
+
+    
+</head>
+<body style="background-color:rgb(222, 224, 224);">
+    <div class="nav-1">
+        <!-- <h2>amazon</h2> -->
+        <img onmouseover="transaction_img1()" onmouseout="transaction_img2()" id="nav1-img1" src="amazon-black-icon-16.png" alt="">
+        <h5>.in</h5>
+        <i id="nav1-i1" class="fa-solid fa-location-dot"></i>
+        <h6 onmouseover="transaction_h41()" onmouseout="transaction_h42()" id="nav1-h61">Hello</h6>
+        <h4 onmouseover="transaction_h41()" onmouseout="transaction_h42()" id="nav1-h41">Select your address</h4>
+        
+        <div class="dropdown-1">
+            <!-- <i class="fa-solid fa-caret-down"></i> -->
+            <button class="dropbtn-1">
+                 All</button>
+                 <!-- <i class="fa-solid fa-square-caret-down"></i> -->
+            <div class="dropdown-content-1">
+              <a href="#">English</a>
+              <a href="#">Malayalam</a>
+              <a href="#">Hindi</a>
+              <a href="#">Tamil</a>
+              <a href="#">Marathi</a>
+              <a href="#">telugu</a>
+            </div>
+        </div>
+
+            <div class="search-container">
+              <form>
+                <input type="text" placeholder="Search.." name="search">
+                <button class="button-1" type="submit"></button>
+                <i class="fa fa-search i-1"></i>
+              </form>
+            </div>
+
+
+    </div>
+
+    <div class="nav-2">
+        <div class="nav2-icon">
+            <i onclick="opensidebr()" class="fa-solid fa-bars"></i>
+            <h2 onmouseover="transaction1()" onmouseout="transaction2()" id="nav2-h2"  onclick="opensidebr()">All</h2>
+        </div>
+        <h3 onmouseover="transaction11()" onmouseout="transaction21()" id="nav2-h31">Amazon miniTV</h3>
+        <h3 onmouseover="transaction12()" onmouseout="transaction22()" id="nav2-h32">Sell</h3>
+        <h3 onmouseover="transaction13()" onmouseout="transaction23()" id="nav2-h33">Best Sellers</h3>
+        <h3 onmouseover="transaction14()" onmouseout="transaction24()" id="nav2-h34">Mobiles</h3>
+        <h3 onmouseover="transaction15()" onmouseout="transaction25()" id="nav2-h35">Today's Deals</h3>
+        <h3 onmouseover="transaction16()" onmouseout="transaction26()" id="nav2-h36">Customer Service</h3>
+        <h3 onmouseover="transaction17()" onmouseout="transaction27()" id="nav2-h37">New Releases</h3>
+        <h3 onmouseover="transaction18()" onmouseout="transaction28()" id="nav2-h38">Electronics</h3>
+        <h3 onmouseover="transaction19()" onmouseout="transaction29()" id="nav2-h39">Prime</h3>
+        <h3 onmouseover="transaction10()" onmouseout="transaction20()" id="nav2-h30">Home & Kitchen</h3>
+        <h3 onmouseover="transaction111()" onmouseout="transaction211()" id="nav2-h311">Amazon Pay</h3>
+        <h3 onmouseover="transaction112()" onmouseout="transaction212()" id="nav2-h312">Fashion</h3>
+        <h3 onmouseover="transaction113()" onmouseout="transaction213()" id="nav2-h313">Computers</h3>
+        <h3 onmouseover="transaction114()" onmouseout="transaction214()" id="nav2-h314">Beauty & Personal Care</h3>
+        <h3 onmouseover="transaction115()" onmouseout="transaction215()" id="nav2-h315">Books</h3>
+    </div>
+
+   <div class="div-slide">
+      <!-- <img style="width: 100%; height: 450px;" src="summer-garden.jpg" class="d-block w-100" alt="...">  -->
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="phone-banner.jpg" alt="Los Angeles" style="width:100%; height: 650px;">
+          </div>
+    
+          <div class="item">
+            <img src="fashion-banner.jpg" alt="Chicago" style="width:100%; height: 650px;">
+          </div>
+        
+          <div class="item">
+            <img src="toys-banner.jpg" alt="New york" style="width:100%; height: 650px;">
+          </div>
+          <div class="item">
+            <img src="Big-Bathroom-sale.jpg" alt="New york" style="width:100%; height: 650px;">
+          </div>
+          <div class="item">
+            <img src="Shoes_3000.jpg" alt="New york" style="width:100%; height: 650px;">
+          </div>
+          <div class="item">
+            <img src="cloths-banner.jpg" alt="New york" style="width:100%; height: 650px;">
+          </div>
+        </div>
+     
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+     
+
+   
+    </div> 
+
+    
+
+    <div class="div-main">
+        <div class="div1-first">
+            <h2>Appliances for your home | Up to 55% off</h2>
+            <div class="div1-img1">
+                <img class="img1" src="ac.jpg" alt="">
+                <img class="img2" src="fridge.jpg" alt="">
+                <h5 class="div1-h51">Air Conditioners</h5>
+                <h5 class="div1-h52">Refrigerators</h5>
+            </div>
+            <div class="div1-img2">
+                <img class="img3" src="oven.jpg" alt="">
+                <img class="img4" src="washing.jpg" alt="">
+                <h5 class="div1-h53">Air Conditioners</h5>
+                <h5 class="div1-h54">Refrigerators</h5>
+            </div>
+             <a href="">See More</a>
+        </div>
+        <div class="div2-first">
+            <h2>Shop & Pay | Earn rewards daily</h2>
+            <div class="div2-img1">
+                <img class="img5" src="scratch-card.jpg" alt="">
+                <img class="img6" src="earnpoint.jpg" alt="">
+                <h5 class="div2-h51">Claim your scratch cards</h5>
+                <h5 class="div2-h52">Redeem your collected <span>rewards</span></h5>
+            </div>
+            <div class="div2-img2">
+                <img class="img7" src="win-card.jpg" alt="">
+                <img class="img8" src="shop.png" alt="">
+                <h5 class="div2-h53">Pay & Win scratch cards</h5>
+                <h5 class="div2-h54">Shop & Collect Rewards <span>daily</span></h5>
+            </div>
+             <a href="">See more</a>
+        </div>
+        <div class="div3-first">
+            <h2>Bluetooth Calling Smartwatch starts<span style="position: relative; top: 5px; left: 10px;"></span> ₹1,999</span></h2>
+            <div class="div3-img1">
+                <img class="img" src="smartwatch.avif" alt="">
+            </div>
+             <a href="">Shop Now</a>
+        </div>
+        <div class="div4-first">
+            <div class="div4-box1">
+                <h2>Sign in for your best experience</h2>
+                <button>Sign in securely</button>
+            </div>
+            <div class="div4-box2">
+                <img class="div4-img" src="best-laptop.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="div-main2">
+        <div class="div3-first">
+            <h2 style="margin-right: 15px;">Up to 70% off | Clearance store</h2>
+            <div class="div3-img1">
+                <img class="img" src="Clearance.jpg" alt="">
+            </div>
+             <a href="">Shop Now</a>
+        </div>
+        <div class="div2-first">
+            <h2>Amazon pay | Book travel tickets</h2>
+            <div class="div2-img1">
+                <img class="img5" src="aircraft.jpeg" alt="">
+                <img class="img6" src="Trains.jpg" alt="">
+                <h5 class="div2-h51">Get up to 15% off* on <span style="position: relative; right: 130px; top: 20px;">flight tickets</span></h5>
+                <h5 class="div2-h52">
+                    Zero gateway fees on<span style="position: relative; right: 120px;">trains</span></h5>
+            </div>
+            <div class="div2-img2">
+                <img class="img7" src="bus.JPG" alt="">
+                <img class="img8" src="travelbag.jpg" alt="">
+                <h5 class="div2-h53">Guaranteed rewards on<span style="position: relative; right: 132px; top: 20px;">bus tickets</span></h5>
+                <h5 class="div2-h54">Products for your travel<span>needs</span></h5>
+            </div>
+             <a href="">See more</a>
+        </div>
+        <div class="div1-first">
+            <h2>Up to 60% off | Styles for men</h2>
+            <div class="div1-img1">
+                <img class="img1" src="mensdress3.jpeg" alt="">
+                <img class="img2" src="footware2.jpg" alt="">
+                <h5 class="div1-h51">Clothing</h5>
+                <h5 class="div1-h52">Footwear</h5>
+            </div>
+            <div class="div1-img2">
+                <img class="img3" src="watchs2.jpg" alt="">
+                <img class="img4" src="bags.jpg" alt="">
+                <h5 class="div1-h53">Watches</h5>
+                <h5 class="div1-h54">Bags & luggage</h5>
+            </div>
+             <a href="">See More</a>
+        </div>
+        <div class="div24-first" >
+            <h2>Revamp your home in style</h2>
+            <div class="div24-img1">
+                <img class="img9" src="decor1.jpg" alt="">
+                <img class="img10" src="storage.jpg" alt="">
+                <h5 class="div1-h51">Home decoration</h5>
+                <h5 class="div1-h52" style="position: relative; left: 170px;">Home storage</h5>
+            </div>
+            <div class="div24-img2">
+                <img class="img11" src="light.jpg" alt="">
+                <img class="img12" src="bedsheet.jpg" alt="">
+                <h5 class="div24-h53">Lighting solutions</h5>
+                <h5 class="div24-h54">Bedsheets & curtains</h5>
+            </div>
+             <a href="">See More</a>
+        </div>
+    </div>
+
+    <div class="div-main3">
+        <h2>Today's Deals</h2>
+        <div class="div3-image3">
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="AC_SY200_.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 80% off </mark>Deal of the day</p>
+                <p>Realme Narzo N53|| Buy Now</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="iron.jpg" alt="">
+                </div> 
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 40% off </mark>Ends in 04:35:20</p>
+                <p>Home Appliances-Irons, Water purifie...</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="lava.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> 10% off </mark>Deal of the day</p>
+                <p>Lava Blaze 5G starting Rs. 10,999</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="camera-1.jpg" alt="">
+                </div>  
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 40% off </mark>Ends in 04:35:20</p>
+                <p>Kitchen Appliances: Mixer Grinders, Kettles...</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="AC_SY2_.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> 27% off </mark>Ends in 04:15:03</p>
+                <p>DSLR Mirrorless cameras From Top Brands...</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="watch-100.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 64% off </mark>Ends in 04:05:20</p>
+                <p>Top Deals on Titan, Fastrack, Casio & More</p>
+            </div>
+            <!-- <div class="img1-div3">
+                <img src="earphone-3.jpg" alt="">
+                <h6>Realme Narzo N53|| Buy NowRealme Narzo N53|| Buy Now</h6>
+            </div> -->
+            
+        </div>
+       
+        <a href="">See all details</a>
+    </div>
+
+    <div class="div-main4">
+        <h2>Frequently repurchased in Grocery</h2>
+        <img src="coffee.jpg" alt="">
+        <img src="Kanandevan.png" alt="">
+        <img src="Oats.jpg" alt="">
+        <img src="ferrero.jpg" alt="">
+        <img src="nutella.jpg" alt="">
+        <img src="dryfruit.jpg" alt="">
+        <img src="bounty.jpg" alt="">
+    </div>
+
+    <div class="div-main5">
+        <h2>Best Sellers in Computers & Accessories</h2>
+        <img src="headset3.jpg" alt="">
+        <img src="sandisk.jpg" alt="">
+        <img src="usb.jpg" alt="">
+        <img src="headset.jpg" alt="">
+        <img src="mouse.jpg" alt="">
+        <img src="webcam1.jpg" alt="">
+        <img src="HPPenDrive_1.jpg" alt="">
+    </div>
+
+    <div class="div-main2" style="position: relative; bottom: 590px;">
+        <div class="div3-first">
+            <h2 style="margin-right: 15px;">Sell on Amazon with 1-Click Launch Support</h2>
+            <div class="div3-img1">
+                <img class="img" src="amazon.png" alt="">
+            </div>
+             <a href="">Register Now</a>
+        </div>
+        <div class="div2-first">
+            <h2>Minimum 50% off | Top styles for her</h2>
+            <div class="div2-img1">
+                <img class="img5" src="allens1.jpg" alt="">
+                <img class="img6" src="biba1.jpg" alt="">
+                <h5 class="div2-h51">Allen Solly, Fort Collins<span style="position: relative; right: 130px; top: 20px;">& more</span></h5>
+                <h5 class="div2-h52">Biba, Aurelia & more</h5>
+            </div>
+            <div class="div2-img2">
+                <img class="img7" src="silk-saree.jpeg" alt="">
+                <img class="img8" src="harpa.jpg" alt="">
+                <h5 class="div2-h53">Womanista, Mimosa &<span style="position: relative; right: 132px; top: 20px;"> more</span></h5>
+                <h5 class="div2-h54">Harpa, Only & more</h5>
+            </div>
+             <a href="">See all deals</a>
+        </div>
+         <div class="div3-first">
+            <h2>Kitchen organizers from local shops</h2>
+            <div class="div3-img1">
+                <img class="img" src="kitchen-organiser.jpg" alt="">
+            </div>
+             <a href="">Visit the local shops store</a>
+        </div>
+        <div class="div24-first" >
+            <h2>Amazon Fresh | Great prices | Fruits & vegetables</h2>
+            <div class="div24-img1">
+                <img class="img9" src="fruits1.jpeg" alt="">
+                <img class="img10" src="vegetables.jpg" alt="">
+                <h5 class="div1-h51">Fruits</h5>
+                <h5 class="div1-h52" style="position: relative; left: 170px;">Vegetables</h5>
+            </div>
+            <div class="div24-img2">
+                <img class="img11" src="seasonal.jpg" alt="">
+                <img class="img12" src="amazon-fresh.jpg" alt="">
+                <h5 class="div24-h53">Season's special</h5>
+                <h5 class="div24-h54">Up to 45% off</h5>
+            </div>
+             <a href="">See More</a>
+        </div>
+    </div>
+
+    
+    <div class="div-main7">
+        <h2>Amazon Live | Watch, Chat & Shop LIVE</h2>
+        <a href="" style="position: relative; bottom: 25px; left: 510px;">See more from Amazon Live</a>
+        <div class="div-second7">
+            <iframe width="500" height="230" src="https://www.youtube-nocookie.com/embed/zjXwJZ9dKH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img src="coffee.jpg" alt="">
+            <img src="Kanandevan.png" alt="">
+            <img src="Oats.jpg" alt="">
+            <img src="ferrero.jpg" alt="">
+            <!-- <img src="nutella.jpg" alt=""> -->
+        </div>
+        <h5 style="position: relative; bottom: 15px; left: 16px;">Naina Ahluwalia</h5>
+        <a style="position: relative; bottom: 43px; left: 126px;" href="" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="This influencer livestream is intended to provide you with information that you may find helpful to your purchasing decisions. This influencer is compensated and is a part of the Amazon Influencer Program. Learn more about the Amazon Influencer Program.">Earns commissions</a>
+    </div>
+
+    <div class="div-main6">
+        <img src="desktop_banner.jpg" alt="">
+    </div>
+
+
+    <div class="div-main" style="position: relative; bottom: 765px;">
+        <div class="div1-first">
+            <h2>Birthday store</h2>
+            <div class="div1-img1">
+                <img class="img1" src="gift-for-men.jpg" alt="">
+                <img class="img2" src="gift-girls-1.jpg" alt="">
+                <h5 class="div1-h51">Gift for mens</h5>
+                <h5 class="div1-h52">Gift for womens</h5>
+            </div>
+            <div class="div1-img2">
+                <img class="img3" src="gift-boys-1.jpg" alt="">
+                <img class="img4" src="gift-girls.jpg" alt="">
+                <h5 class="div1-h53">Gift for boys</h5>
+                <h5 class="div1-h54">Gift for girls</h5>
+            </div>
+             <a href="">See More</a>
+        </div>
+        <div class="div2-first">
+            <h2>Essentials for Expecting Mothers</h2>
+            <div class="div2-img1">
+                <img class="img5" src="Pregnancy_Supplements.jpg" alt="">
+                <img class="img6" src="Maternity_Sleep__Loungewear.jpg" alt="">
+                <h5 class="div2-h51">Pregnancy Supplements</h5>
+                <h5 class="div2-h52">Maternity Sleep & <span style="position: relative; right: 110px;">Loungewear</span></h5>
+            </div>
+            <div class="div2-img2">
+                <img class="img7" src="Maternity_pillows.jpg" alt="">
+                <img class="img8" src="Maternity_Skin_care.jpg" alt="">
+                <h5 class="div2-h53">Maternity pillows</h5>
+                <h5 class="div2-h54">Maternity Skin care</h5>
+            </div>
+             <a href="">See more</a>
+        </div>
+        <div class="div3-first">
+            <h2>yeh meri family season 2 on<span style="position: relative; top: 10px; left: 10px;"></span> miniTV</span></h2>
+            <div class="div3-img1" style="object-fit: fill;">
+                <!-- <iframe style="position: relative; left: 5px; top: 15px;" width="340" height="315" src="https://www.youtube.com/embed/JtWyiIL5_So" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                <iframe style="position: relative; left: 5px; top: 15px;" width="340" height="315" src="https://www.youtube-nocookie.com/embed/JtWyiIL5_So?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+             <a style="position: relative; top: 25px;" href="">Watch for FREE | miniTV</a>
+        </div>
+        <div class="div1-first">
+            <h2>One stop shop for all your wedding shopping</h2>
+            <div class="div1-img1">
+                <img class="img1" src="shop-for-her.jpg" alt="">
+                <img class="img2" src="shop-for-him.jpg" alt="">
+                <h5 class="div1-h51">Shop for her</h5>
+                <h5 class="div1-h52">Shop for him</h5>
+            </div>
+            <div class="div1-img2">
+                <img class="img3" src="Pooja_essentials_.jpg" alt="">
+                <img class="img4" src="Explore_more.jpg" alt="">
+                <h5 class="div1-h53">Pooja essentials</h5>
+                <h5 class="div1-h54">Explore the store</h5>
+            </div>
+             <a href="">See More</a>
+        </div>
+    </div>
+
+    <div class="div-main3" style="position: relative; bottom: 1010px;">
+        <h2>Today's Deals</h2>
+        <div class="div3-image3">
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="AC_SY200_.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 80% off </mark>Deal of the day</p>
+                <p>Realme Narzo N53|| Buy Now</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="iron.jpg" alt="">
+                </div> 
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 40% off </mark>Ends in 04:35:20</p>
+                <p>Home Appliances-Irons, Water purifie...</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="lava.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> 10% off </mark>Deal of the day</p>
+                <p>Lava Blaze 5G starting Rs. 10,999</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="camera-1.jpg" alt="">
+                </div>  
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 40% off </mark>Ends in 04:35:20</p>
+                <p>Kitchen Appliances: Mixer Grinders, Kettles...</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="AC_SY2_.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> 27% off </mark>Ends in 04:15:03</p>
+                <p>DSLR Mirrorless cameras From Top Brands...</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img">
+                    <img src="watch-100.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 64% off </mark>Ends in 04:05:20</p>
+                <p>Top Deals on Titan, Fastrack, Casio & More</p>
+            </div>
+            <!-- <div class="img1-div3">
+                <img src="earphone-3.jpg" alt="">
+                <h6>Realme Narzo N53|| Buy NowRealme Narzo N53|| Buy Now</h6>
+            </div> -->
+            
+        </div>
+       
+        <a href="">See all details</a>
+    </div>
+
+    <div class="div-main3" style="position: relative; bottom: 1010px;">
+        <h2 style="font-size: 17px;">Customers who viewed items in your browsing history also viewed</h2>
+        <div class="div3-image3">
+            <div class="img1-div3">
+                <div class="img1-img" style="background-color: white;">
+                    <img src="img-1.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 80% off </mark>Deal of the day</p>
+                <p>Lymio Dresses for Women (525) ₹499.00</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img" style="background-color: white;">
+                    <img src="img-2.jpg" alt="">
+                </div> 
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 40% off </mark>Ends in 04:35:20</p>
+                <p>Bhuira|All Natural Jam Strawberry Preserve|No Added Sugar|No Added preservatives |No Artifical Color Added |240 g|Pack of 1</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img" style="background-color: white;">
+                    <img src="img-3.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> 10% off </mark>Deal of the day</p>
+                <p>YUM YUM Premium Daily Needs Fresh and Healthy Dry Fruits Combo Pack 2kg (California Almonds 500g, Cashew Nut 500g, Pistachios)</p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img" style="background-color: white;">
+                    <img src="img-4.jpg" alt="">
+                </div>  
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 40% off </mark>Ends in 04:35:20</p>
+                <p>Fruitri Super Healthy nuts and dry fruits mix 200g - Fresh and Perfectly Balanced Mix Dry Fruits Pack, 9+ mixed dry fruits
+                </p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img" style="background-color: white;">
+                    <img src="img-5.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> 27% off </mark>Ends in 04:15:03</p>
+                <p>Aahwan Women's & Girls' Black Solid Ruched Detail A-line Mini Dress
+                </p>
+            </div>
+            <div class="img1-div3">
+                <div class="img1-img" style="background-color: white;">
+                    <img src="img-6.jpg" alt="">
+                </div>
+                <p style="color: rgb(200, 5, 5);"><mark style="background-color: rgb(200, 5, 5); color: white;"> UP to 64% off </mark>Ends in 04:05:20</p>
+                <p>Paper Boat Absolute Health Premium Dry Fruit Mix, Healthy Trail Mix with Dry Fruits | Almonds I Cashews I Cranberry | Pumpkin</p>
+            </div>
+            <!-- <div class="img1-div3">
+                <img src="earphone-3.jpg" alt="">
+                <h6>Realme Narzo N53|| Buy NowRealme Narzo N53|| Buy Now</h6>
+            </div> -->
+            
+        </div>
+    </div>
+
+    <div class="nav-7">
+        <h5>See personalized recommendations</h5>
+        <button class="btn-1">Sign in</button>
+        <h6>New customer?</h6>
+        <a href="">Start here</a>
+    </div>
+
+
+
+
+
+
+    <div class="nav-3">
+        <h5>Back to top</h5>
+    </div>
+    <div class="nav-4">
+        <table>
+            <tr>
+              <th>Get to Know Us</th>
+              <th>Contact with us</th>
+              <th>Make Money with Us</th>
+              <th>Let us help you</th>
+            </tr>
+            <tr>
+              <td><a>About Us</a></td>
+              <td><a href="">Facebook</a></td>
+              <td><a href="">Sell on Amazon</a></td>
+              <td><a href="">COVID-19 and Amazon</a></td>
+            </tr>
+            <tr>
+              <td><a href="">Careers</a></td>
+              <td><a href="">Twitter</a></td>
+              <td><a href="">Sell under Amazon Accelerator</a></td>
+              <td><a href="">Your Account</a></td>
+            </tr>
+            <tr>
+              <td><a href="">Press Releases</a></td>
+              <td><a href="">Instagram</a></td>
+              <td><a href="">Protect and Build Your Brand</a></td>
+              <td><a href="">Returns Centre</a></td>
+            </tr>
+            <tr>
+              <td><a href="">Amazon Science</a></td>
+              <td><a href=""></a></td>
+              <td><a href="">Amazon Global Selling</a></td>
+              <td><a href="">100% Purchase Protection</a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><a href="">Become an Affiliate</a></td>
+              <td><a href="">Amazon App Download</a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><a href="">Fulfilment by Amazon</a></td>
+              <td><a href="">Help</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><a href="">Advertise Your Products</a></td>
+                <td><a href=""></a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><a href="">Amazon Pay on Merchants
+                </a></td>
+                <td><a href=""></a></td>
+              </tr>
+          </table>
+          <hr class="solid">
+          <div class="nav4-div1">
+            <img src="amazon-logo.png" alt="">
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa-solid fa-globe"></i>
+                    English</button>
+                <div class="dropdown-content">
+                  <a href="#">English</a>
+                  <a href="#">Malayalam</a>
+                  <a href="#">Hindi</a>
+                  <a href="#">Tamil</a>
+                  <a href="#">Marathi</a>
+                  <a href="#">telugu</a>
+                </div>
+            </div>
+           
+          <div class="nav5-div2">
+            <h6>Australia</h6>
+            <h6>Brazil</h6>
+            <h6>Canada</h6>
+            <h6>China</h6>
+            <h6>France</h6>
+            <h6>Germany</h6>
+            <h6>Italy</h6>
+            <h6>Japan</h6>
+            <h6>Mexico</h6>
+            <h6>Netherlands</h6>
+            <h6>Ploand</h6>
+            <h6>Singapore</h6>
+            <h6>Spain</h6>
+            <h6>Turkey</h6>
+            <h6>UAE</h6>
+                
+          </div>
+          <div class="nav5-div3">
+            <h6>United Kingdrom</h6>
+            <h6>United State</h6>
+            
+          </div>
+
+          
+    </div>
+
+    <div class="nav-6">
+       
+    </div>
+
+
+
+
+    <div id="sidebar" class="sidebar">
+        <i style="position: relative; left: 360px; top: 10px; font-size: 30px; color: white;" onclick="closesidebr()" class="fa-solid fa-xmark class-icon"></i>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function transaction1(){
+            document.getElementById("nav2-h2").style.borderColor = " white";
+            // 
+            // 
+            //
+            // 
+            // 
+            // 
+            // 
+            // 
+            // document.getElementById("nav2-h312").style.borderColor = " white";
+            // document.getElementById("nav2-h313").style.borderColor = " white";
+            // document.getElementById("nav2-h314").style.borderColor = " white";
+            // document.getElementById("nav2-h315").style.borderColor = " white";
+            // document.getElementById("nav2-h33").style.borderColor = " white";
+        }
+        function transaction11(){
+            document.getElementById("nav2-h31").style.borderColor = " white";
+        }
+        function transaction12(){
+            document.getElementById("nav2-h32").style.borderColor = " white";
+        }
+        function transaction13(){
+            document.getElementById("nav2-h33").style.borderColor = " white";
+        }
+        function transaction14(){
+            document.getElementById("nav2-h34").style.borderColor = " white";
+        }
+        function transaction15(){
+            document.getElementById("nav2-h35").style.borderColor = " white";
+        }
+        function transaction16(){
+            document.getElementById("nav2-h36").style.borderColor = " white";
+        }
+        function transaction17(){
+            document.getElementById("nav2-h37").style.borderColor = " white";
+        }
+        function transaction18(){
+            document.getElementById("nav2-h38").style.borderColor = " white";
+        }
+        function transaction19(){
+            document.getElementById("nav2-h39").style.borderColor = " white";
+        }
+        function transaction10(){
+            document.getElementById("nav2-h30").style.borderColor = " white";
+        }
+        function transaction111(){
+            document.getElementById("nav2-h311").style.borderColor = " white";
+        }
+        function transaction112(){
+            document.getElementById("nav2-h312").style.borderColor = " white";
+        }
+        function transaction113(){
+            document.getElementById("nav2-h313").style.borderColor = " white";
+        }
+        function transaction114(){
+            document.getElementById("nav2-h314").style.borderColor = " white";
+        }
+        function transaction115(){
+            document.getElementById("nav2-h315").style.borderColor = " white";
+        }
+
+        function transaction_img1(){
+            document.getElementById("nav1-img1").style.borderColor = " white";
+        }
+        function transaction_i1(){
+            document.getElementById("nav1-i1").style.borderColor = " white";
+        }
+        function transaction_h61(){
+            document.getElementById("nav1-h61").style.borderColor = " white";
+        }
+        function transaction_h41(){
+            document.getElementById("nav1-h41").style.borderColor = " white";
+        }
+
+
+
+        function transaction2(){
+            document.getElementById("nav2-h2").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction21(){
+            document.getElementById("nav2-h31").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction22(){
+            document.getElementById("nav2-h32").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction23(){
+            document.getElementById("nav2-h33").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction24(){
+            document.getElementById("nav2-h34").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction25(){
+            document.getElementById("nav2-h35").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction26(){
+            document.getElementById("nav2-h36").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction27(){
+            document.getElementById("nav2-h37").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction28(){
+            document.getElementById("nav2-h38").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction29(){
+            document.getElementById("nav2-h39").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction20(){
+            document.getElementById("nav2-h30").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction211(){
+            document.getElementById("nav2-h311").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction212(){
+            document.getElementById("nav2-h312").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction213(){
+            document.getElementById("nav2-h313").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction214(){
+            document.getElementById("nav2-h314").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction215(){
+            document.getElementById("nav2-h315").style.borderColor = "rgb(30, 29, 29)";
+        }
+
+        function transaction_img2(){
+            document.getElementById("nav1-img1").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction_i2(){
+            document.getElementById("nav1-i1").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction_h62(){
+            document.getElementById("nav1-h61").style.borderColor = "rgb(30, 29, 29)";
+        }
+        function transaction_h42(){
+            document.getElementById("nav1-h41").style.borderColor = "rgb(30, 29, 29)";
+        }
+        
+
+
+
+
+
+        function opensidebr(){
+            document.getElementById("sidebar").style.marginLeft = "0px";
+        }
+        function closesidebr(){
+            document.getElementById("sidebar").style.marginLeft = "-400px";
+        }
+
+
+    </script>
+
+
+
+
+
+
+        
+
+   
+    
+
+
+
+    <script>
+
+
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+        });
+        </script>
+    
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</body>
+</html>
